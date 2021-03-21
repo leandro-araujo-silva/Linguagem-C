@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+int main()
+{
+    int valor;
+    int ante;
+    int suces;
+
+    printf("Digite um numero: ");
+    scanf("%i", &valor);
+
+    ante = valor - 1;
+    suces = valor + 1;
+
+    printf("O numero e %i\n", valor);
+    printf("Seu antecessor e o %i\n", ante);
+    printf("Seu sucessor e o %i\n", suces);
+
+    return 0;
+}
