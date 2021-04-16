@@ -20,7 +20,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ---
 
-<a href="">
 <img src="https://github.com/leandro-araujo-silva/Proffy-FullStack/raw/master/github/linkedin.png" alt="linkedin" height="50"></a>
 <br />
 
