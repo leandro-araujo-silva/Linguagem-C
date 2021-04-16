@@ -3,7 +3,7 @@
 ## Demonstração 📸
 
 <div align="center" >
-  <img src="_imagens/linguagem-c.jpg" alt="C logomarca" height="425">
+  <img src="_imagens/c2.png" alt="C logomarca" height="425">
 </div>
 
 ---
