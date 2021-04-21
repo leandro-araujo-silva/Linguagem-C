@@ -24,8 +24,6 @@ int main () {
 
     total_pagar = valor_total + total_impostos;
 
-    printf("Total a pagar: %.2lf\n", total_pagar);
-
     if (valor_produto < 9625.0) {
         printf("%.2lf\n", conversao);
         printf("%.2lf\n", valor_produto);
