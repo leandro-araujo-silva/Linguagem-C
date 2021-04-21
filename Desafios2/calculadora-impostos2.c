@@ -26,7 +26,7 @@ int main () {
 
     printf("Total a pagar: %.2lf\n", total_pagar);
 
-    if (total_pagar < 2500.00) {
+    if (valor_produto < 9625.0) {
         printf("%.2lf\n", conversao);
         printf("%.2lf\n", valor_produto);
         printf("%.2lf\n", valor_frete);
@@ -37,7 +37,7 @@ int main () {
         printf("%.2lf\n", total_pagar);
         printf("Impostos calculados com o frete"); 
       
-    } else if (total_pagar >= 2500) {
+    } else if (valor_produto >= 9625.0) {
         valor_total = valor_produto;
 
         II = valor_total * 0.60;
