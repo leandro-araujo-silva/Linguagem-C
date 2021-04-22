@@ -12,7 +12,8 @@ int Menor(int x[]) {
 
 
 int main(void) {
-    int number[6], menor, maior;
+    int number[6];
+    int menor, maior;
 
     for(int i; i < 6; i++) {
         scanf("%d", &number[i]);
