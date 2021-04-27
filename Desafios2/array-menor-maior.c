@@ -1,30 +1,28 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int Menor(int x[]) {
-    int menor = 0;
-
-    if (x < menor){
-        menor = x;
-    }
-
-    return menor;
-}
-
-
-int main(void) {
+int main() {
     int number[6];
-    int menor, maior;
+    int menor = number[1], maior = number[0];
 
-    for(int i; i < 6; i++) {
+    for(int i = 0; i < 6; i++) {
         scanf("%d", &number[i]);
-
-        //menor = Menor(number[i]);
-        //maior = functionMaior(number[i]);
     }
 
-    menor = Menor(number[10]);
+    for (int j = 0; j < 6; j++) {
+
+        if (number[j] < menor) {
+            menor = number[j];
+        }
+        
+        if (number[j] > maior ) {
+            maior = number[j];
+        }
+        
+    }
 
     printf("%d\n", menor);
+    printf("%d\n", maior);
 
     return 0;
 }
