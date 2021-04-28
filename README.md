@@ -10,7 +10,7 @@
 
 ## Sobre o Projeto
 
-Praticando exercícios e desafios!
+Praticando exercícios e desafios, a fim de aprimorar a minha lógica de programação!
 
 ### 🛠 Tecnologias
 
