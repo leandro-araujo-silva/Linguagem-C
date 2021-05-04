@@ -1,15 +1,17 @@
 #include <stdio.h>
 
-void ePar(int a[], int i, int tamanho) {
-    if(i == tamanho) {
+void imprime_par(int a[], int i) {
+    if(i == -1) {
         return;
     }
 
+    // imprime_par(a, i-1);                   //Imprimindo de frente pra trás
+
     if(a[i] % 2 == 0) {
-        printf("%d", a[i]);
+        printf("%d\n", a[i]);
     }
 
-    return ePar(a, i+1, tamanho);
+    return imprime_par(a, i-1);    //Imprimindo de trás pra frente
 }
 
 void ler_array(int a[], int i, int tamanho) {
@@ -27,7 +29,7 @@ int main() {
 
     ler_array(array, 0, 10);
 
-    ePar(array, 0, 10);
+    imprime_par(array, 9);
 
     return 0;
 }
