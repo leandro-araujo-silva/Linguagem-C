@@ -3,12 +3,20 @@
 #include <math.h>
 #include <stdlib.h>
 
-int eh_primo(int i, int x) {
+int eh_primo_i(int i, int x) {
+    if(i > sqrt(x)) {
+        return 1;
+    }
+
     if(x % i == 0) {
         return 0;
     }
 
-    return eh_primo(i + 1, x);
+    return eh_primo_i(i + 1, x);
+}
+
+int eh_primo(int x) {
+    return eh_primo_i(2, x);
 }
 
 int fatorial(int z) {
@@ -26,8 +34,8 @@ int main() {
 
     scanf("%d", &n);
 
-    printf("fat(%d) = %d\n", n , fatorial(n));
-    printf("eh_primo(%d) = %s\n", n, eh_primo(2, n));
+    printf("fat(%d) = %d\n", n, fatorial(n));
+    printf("eh_primo(%d) = %d\n", n, eh_primo(n));
 
     return 0;
 }
