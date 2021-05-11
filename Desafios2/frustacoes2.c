@@ -45,8 +45,8 @@ void loop(int h_marcado[], int n, int i) {
 int main() {
     int encontros;
     int limite_de_atraso;
-    int h_marcado[7];
-    int h_felipe[7];
+    int h_marcado[10000];
+    int h_felipe[10000];
 
     scanf("%d%d", &encontros, &limite_de_atraso);
 
