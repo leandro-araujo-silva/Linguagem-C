@@ -23,4 +23,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
 <img src="https://github.com/leandro-araujo-silva/Proffy-FullStack/raw/master/github/linkedin.png" alt="linkedin" height="50">
 <br/>
 
-Veja meu Linkedin: [LEANDRO ARAÚJO]
+Veja meu Linkedin: [LEANDRO ARAÚJO](http://www.linkedin.com/in/leandro-ara%C3%BAjo-da-silva-1660631b9)
