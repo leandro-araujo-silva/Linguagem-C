@@ -1,25 +1,25 @@
 #include <stdio.h>
 
-void loop(int x, int y, int i) {
+void loop(int x, int y, int z, int i) {
     if (i > y) {
         return;
     }
 
-    if (i % x == 0) {
+    if (i == x) {
         printf("%d\n", i);
     } else {
         printf("%d ", i);
     }
 
-    return loop(x, y, i+1);
+    return loop(x, y, z, i+z); 
 }
 
 int main() {
-    int x, y;
+    int x, y, z;
 
-    scanf("%d%d", &x, &y);
+    scanf("%d%d%d", &x, &y, &z);
 
-    loop(x, y, 1);
+    loop(x, y, z, 1);
 
     return 0;
 }

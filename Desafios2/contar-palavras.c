@@ -12,6 +12,8 @@ void escanear(char array[], int resultado) {
 
 int main() {
     char array[500];
+
     escanear(array, 0);
+    
     return 0;
 }
