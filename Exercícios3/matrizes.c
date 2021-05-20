@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 void leia_matriz(int matriz[5][5]) {
     int valor;
