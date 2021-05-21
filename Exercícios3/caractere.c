@@ -8,7 +8,7 @@ void main() {
     scanf("%c", &letra1);
 
     printf("Digite um caracter: ");
-    scanf("%c", &letra2);
+    scanf(" %c", &letra2);                      // O espaço pode pegar o caracter do espaço e do enter
 
     printf("Letra1: %c\nLetra2: %c\n", letra1, letra2);
 
