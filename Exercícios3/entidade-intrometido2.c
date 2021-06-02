@@ -39,7 +39,7 @@ void leia_matriz(int matriz[][500], int tam) {
 
     for(int i = 0; i < tam; i++) {
         for(int j = 0; j < tam; j++) {
-            //printf("Matriz[%d][%d]: ", i, j);
+            printf("Matriz[%d][%d]: ", i, j);
             scanf("%d", &valor);
             matriz[i][j] = valor;
         }
@@ -57,15 +57,15 @@ int main() {
 
     s_arthur = contar_arthur(matriz, tamanho);
 
-    //printf("Arthur: %d\n", s_arthur);
+    printf("Arthur: %d\n", s_arthur);
 
     s_entidade = contar_entidade(matriz, tamanho);
 
-    //printf("Entidade: %d\n", s_entidade);
+    printf("Entidade: %d\n", s_entidade);
 
     s_rodrigo = contar_rodrigo(matriz, tamanho);
 
-    //printf("Rodrigo: %d\n", s_rodrigo);
+    printf("Rodrigo: %d\n", s_rodrigo);
 
     // Decisões
     
