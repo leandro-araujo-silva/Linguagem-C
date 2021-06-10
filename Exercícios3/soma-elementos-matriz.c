@@ -9,19 +9,19 @@ int main() {
         for(int j = 0; j < 7; j++) {
             printf("Matriz[%d][%d]: ", i, j);
             scanf("%d", &valor);
-            matriz[i][j] = valor;
-            soma += matriz[i][j]; 
+            matriz[i][j] = valor; 
         }
     }
 
     // Apresentando os elementos
     for(int c = 0; c < 5; c++) {
         for(int l = 0; l < 7; l++) {
-            printf("Matriz[%d][%d] = %d\n", c, l, matriz[l][c]);
+            printf("Matriz[%d][%d] = %d\n", c, l, matriz[c][l]);
+            soma += matriz[c][l]; 
         } 
     }
 
-    printf("A soma de todos os elementos e: %d\n", soma);
+    printf("A soma total dos elementos: %d\n", soma);
 
     return 0;
 }
