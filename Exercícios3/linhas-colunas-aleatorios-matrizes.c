@@ -30,4 +30,26 @@ int main() {
         }
         somaColunas[c] = soma;
     }
+
+    // Impressão da Matriz
+    printf("\nMatriz:\n");
+
+    for(int l = 0; l < 5; l++) {
+        for(int c = 0; c < 10; c++) {
+            printf("%2d ", mat[l][c]);
+        }
+        printf("\n");
+    }
+
+    printf("\n\nVetor com a soma das linhas:\n");
+    for (int l = 0; l < 5; l++) {
+        printf("Linha %d: %d\n", l, somaLinhas[l]);
+    }
+
+    printf("\n\nVetor com a soma das colunas:\n");
+    for(int c = 0; c < 10; c++) {
+        printf("Coluna %d: %d\n", c, somaColunas[c]);
+    }
+
+    return 0;
 }
