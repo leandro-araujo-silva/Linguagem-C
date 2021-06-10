@@ -25,6 +25,19 @@ int somar_matriz_linha(int matriz[][10], int linha, int col) {
     return soma;
 }
 
+int somar_matriz_coluna(int matriz[][10], int linha, int col) {
+    int soma = 0;
+
+    for(int i = col; i <= col; i++) {
+        for(int j = 0; j < linha; j++) {
+            soma += matriz[j][i];
+            //printf("\nSoma[%d][%d]: %d\n", i, j, soma);
+        }
+    }
+
+    return soma;
+}
+
 int main() {
     int matriz[5][10];
     int somarLinhas[5], somarColunas[10];
@@ -33,12 +46,21 @@ int main() {
 
     // Soma das linhas
 
+    printf("\n");
+
     for(int i = 0; i < 2; i++) {
         somarLinhas[i] = somar_matriz_linha(matriz, i, 5);
         printf("SomaLinha[%d] = %d\n", i, somarLinhas[i]);
     }
 
     // Soma das colunas
+
+    printf("\n");
+
+    for(int j = 0; j < 5; j++) {
+        somarColunas[j] = somar_matriz_coluna(matriz, 2, j);
+        printf("SomaColuna[%d] = %d\n", j, somarColunas[j]);
+    }
     
     return 0;    
 }
