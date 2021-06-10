@@ -7,7 +7,7 @@ int main() {
     int numeros[TAM];
     int aux, contador;
 
-    printf("Entre com dez numeros para preencher o array: \n");
+    printf("Entre com tres numeros para preencher o array: \n");
     for(int i = 0; i < TAM; i++) {
         scanf("%d", &numeros[i]);
     }
@@ -25,9 +25,15 @@ int main() {
             if (numeros[t] > numeros[t + 1]) {
                 aux = numeros[t];
                 numeros[t] = numeros[t + 1];
-
+                numeros[t+1] = aux;
             }
         }
+    }
+
+    printf("\nNumeros ordenados\n");
+
+    for(int j = 0; j < TAM; j++) {
+        printf("%4d", numeros[j]); 
     }
 
     return 0;
