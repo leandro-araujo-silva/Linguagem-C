@@ -29,4 +29,5 @@ int main() {
     printf("&b = %p, b = %d\n", &b, b); 
     printf("&c = %p, c = %d\n", &c, c); 
 
+    return 0;
 }
